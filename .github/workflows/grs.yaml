@@ -24,13 +24,13 @@ jobs:
           card: stats
           options: ${{env.GENERAL}}&show_icons=true&hide_rank=true
           path: profile/stats.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}&
 
       - name: Generate top-langs card
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: top-langs
-          options: ${{env.GENERAL}}
+          options: ${{env.GENERAL}}&langs_count=12
           path: profile/top-langs.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
