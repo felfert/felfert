@@ -1,4 +1,5 @@
 ![Stats](./profile/stats.svg)
+![Langs](./profile/top-langs.svg)
 <!--
 **felfert/felfert** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
