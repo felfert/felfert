@@ -12,6 +12,9 @@ jobs:
     permissions:
       contents: write
 
+    env:
+      GENERAL:  username=${{ github.repository_owner }}&layout=compact&theme=transparent
+
     steps:
       - uses: actions/checkout@v6
 
@@ -19,7 +22,7 @@ jobs:
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: stats
-          options: username=${{ github.repository_owner }}&layout=compact&show_icons=true&hide_rank=true&bg_color=000000
+          options: ${GENERAL}&show_icons=true&hide_rank=true
           path: profile/stats.svg
           token: ${{ secrets.GRS }}
 
@@ -27,8 +30,7 @@ jobs:
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: top-langs
-          options: username=${{ github.repository_owner }}&layout=compact&theme=dark
-          #&bg_color=000000
+          options: ${GENERAL}
           path: profile/top-langs.svg
           token: ${{ secrets.GRS }}
 
