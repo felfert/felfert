@@ -1,15 +1,15 @@
 
       <svg
-        width="467"
+        width="304"
         height="195"
-        viewBox="0 0 467 195"
+        viewBox="0 0 304 195"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         role="img"
         aria-labelledby="descId"
       >
         <title id="titleId">Fritz Elfert's GitHub Stats, Rank: A-</title>
-        <desc id="descId">Total Stars Earned: 26, Total Commits  (last year) : 680, Total PRs: 206, Total Issues: 44, Contributed to (last year): 5</desc>
+        <desc id="descId">Total Stars Earned: 26, Total Commits  (last year) : 682, Total PRs: 206, Total Issues: 44, Contributed to (last year): 5</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 88.54400573839487;
+        stroke-dashoffset: 88.50884978293564;
       }
     }
   
@@ -110,8 +110,8 @@
           rx="4.5"
           height="99%"
           stroke="#e4e2e2"
-          width="466"
-          fill="#fffefe"
+          width="303"
+          fill="#000000"
           stroke-opacity="1"
         />
 
@@ -136,18 +136,7 @@
           transform="translate(0, 55)"
         >
           
-    <g data-testid="rank-circle"
-          transform="translate(390.5, 47.5)">
-        <circle class="rank-circle-rim" cx="-10" cy="8" r="40" />
-        <circle class="rank-circle" cx="-10" cy="8" r="40" />
-        <g class="rank-text">
-          
-        <text x="-5" y="3" alignment-baseline="central" dominant-baseline="central" text-anchor="middle" data-testid="level-rank-icon">
-          A-
-        </text>
-      
-        </g>
-      </g>
+    
     <svg x="0" y="0">
       <g transform="translate(0, 0)">
     <g class="stagger" style="animation-delay: 450ms" transform="translate(25, 0)">
@@ -177,7 +166,7 @@
         x="219.01"
         y="12.5"
         data-testid="commits"
-      >680</text>
+      >682</text>
     </g>
   </g><g transform="translate(0, 50)">
     <g class="stagger" style="animation-delay: 750ms" transform="translate(25, 0)">
