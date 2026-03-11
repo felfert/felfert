@@ -22,7 +22,7 @@ jobs:
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: stats
-          options: ${GENERAL}&show_icons=true&hide_rank=true
+          options: ${{env.GENERAL}}&show_icons=true&hide_rank=true
           path: profile/stats.svg
           token: ${{ secrets.GRS }}
 
@@ -30,7 +30,7 @@ jobs:
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: top-langs
-          options: ${GENERAL}
+          options: ${{env.GENERAL}}
           path: profile/top-langs.svg
           token: ${{ secrets.GRS }}
 
