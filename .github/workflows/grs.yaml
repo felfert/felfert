@@ -13,7 +13,7 @@ jobs:
       contents: write
 
     env:
-      GENERAL:  username=${{ github.repository_owner }}&layout=compact&theme=transparent
+      GENERAL:  username=${{ github.repository_owner }}&layout=compact&theme=transparent&border_color=3d444d
 
     steps:
       - uses: actions/checkout@v6
