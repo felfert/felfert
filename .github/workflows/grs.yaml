@@ -37,7 +37,7 @@ jobs:
       - name: Generate pin
         uses: readme-tools/github-readme-stats-action@v1
         with:
-          card: top-langs
+          card: pin
           options: ${{env.GENERAL}}&repo=action-send-mail
           path: profile/pin.svg
           token: ${{ secrets.GITHUB_TOKEN }}
