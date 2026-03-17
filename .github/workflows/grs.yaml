@@ -18,13 +18,13 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
-      - name: Generate stats card
-        uses: readme-tools/github-readme-stats-action@main
-        with:
-          card: stats
-          options: ${{env.GENERAL}}&show_icons=true&hide_rank=true
-          path: profile/stats.svg
-          token: ${{ secrets.GITHUB_TOKEN }}&
+      #- name: Generate stats card
+      #  uses: readme-tools/github-readme-stats-action@1
+      #  with:
+      #    card: stats
+      #    options: ${{env.GENERAL}}&show_icons=true&hide_rank=true
+      #    path: profile/stats.svg
+      #    token: ${{ secrets.GITHUB_TOKEN }}&
 
       - name: Generate top-langs card
         uses: readme-tools/github-readme-stats-action@v1
@@ -33,6 +33,16 @@ jobs:
           options: ${{env.GENERAL}}&langs_count=8
           path: profile/top-langs.svg
           token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate pin
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: top-langs
+          options: ${{env.GENERAL}}&repo=action-send-mail
+          path: profile/pin.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate pin
 
       - name: Commit cards
         run: |
